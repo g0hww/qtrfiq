@@ -4,6 +4,8 @@ qtrfiq
 A GRC flowgraph and its python script for a QT GUI with a gr-fosphor display 
 that uses hamlib's rigctrl and an IQ audio input.
 
+![alt tag](https://github.com/g0hww/qtrfiq/blob/master/qtrfiq_20140503094737.png)
+
 qtrfiq, pronounced "q terrific", consists of a simple GRC flowgraph and its 
 generated python script.  There's nothing at all complicated in the flowgraph,
 other than a nifty bodge with a pair of function probe blocks that enables

@@ -6,6 +6,8 @@ that uses hamlib's rigctrl and an IQ audio input.
 
 ![Screenshot](https://raw.github.com/g0hww/qtrfiq/master/qtrfiq_20140503094737.png)
 
+![Screenshot](https://raw.github.com/g0hww/qtrfiq/master/grc_2014003100525.png)
+
 qtrfiq, pronounced "q terrific", consists of a simple GRC flowgraph and its 
 generated python script.  There's nothing at all complicated in the flowgraph,
 other than a nifty bodge with a pair of function probe blocks that enables

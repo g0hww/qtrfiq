@@ -13,6 +13,7 @@ qtrfiq to poll the radio's frequency using  hamlib's rigctl utility.
 To use qtrfiq, you need to have gnuradio and gr-fosphor installed.
 
 gnuradio: http://gnuradio.org/redmine/projects/gnuradio/wiki
+
 gr-fosphor: http://sdr.osmocom.org/trac/wiki/fosphor
 
 There is, however an issue with the generated python code, but it can be easily 

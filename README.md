@@ -18,19 +18,6 @@ gnuradio: http://gnuradio.org/redmine/projects/gnuradio/wiki
 
 gr-fosphor: http://sdr.osmocom.org/trac/wiki/fosphor
 
-There is, however an issue with the generated python code, but it can be easily 
-fixed with some editing and will hopefully be fixed in GRC. GRC generates 
-invalid code, which then fails to run, for a FunctionProbe block when the
-BlockID is empty.  The issue is described in this bug: 
-
-http://gnuradio.org/redmine/issues/668
-
-You can generate the Python script and edit it to remove the superfluous dot 
-symbols from the function definitions of _SetSampleRateProbe_probe() and 
-_SetRigFreqProbe_probe() that can be found towards the end of the qtrfiq class 
-constructor.  I will have probably remembered to do have done this myself when I
-have committed the generated python.
-
 The invocation of rigctl is performed in the SetRigFreqProbe FunctionProbe 
 block, and it's arguments can be modifed by changing the tuple passed into 
 the invocation of subprocess.check() in the block's "Function Args" property.
@@ -40,3 +27,5 @@ server on the default port.
 As there is no callback available from the QT fosphor sink, there is no 
 click-to-tune capability, or any other means yet to control the radio's
 frequency from qtrfiq.
+
+I've also added IQ balance and a DC blocker to the flowgraph.
